@@ -1,0 +1,35 @@
+@startuml
+
+start
+
+:execute request;
+
+if (running?)  then (yes)
+    :return inspectId;
+
+else (no)
+    :generate inspectId;
+
+    :start inpect;
+
+    :load inspectItem \n from db;
+
+    :filter item;
+
+    :algorithm.execute;
+
+    :save result;
+
+endif
+
+stop
+
+'(*)  --> "check input"
+'If "input is verbose" then
+'--> [Yes] "turn on verbosity"
+'--> "run command"
+'else
+'--> "run command"
+'Endif
+'-->(*)
+@enduml

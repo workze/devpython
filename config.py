@@ -1,2 +1,3 @@
 
 SERVER_IP = '0.0.0.0'
+WS_ENABLE = True

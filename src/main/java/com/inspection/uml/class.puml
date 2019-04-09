@@ -1,0 +1,70 @@
+@startuml
+
+InspectItem  -left-* InspectItemInstance
+
+class InspectItem {
+    - id
+    - algorithm
+}
+
+
+
+class InspectItemInstance {
+    InspectItem
+    instanceId
+}
+
+class InspectItemService {
+     List<InspectItem> inspectItems
+     + get()
+     - load()
+
+ }
+
+ class InspectItemInstanceCache {
+     List<InspectItemInstance> inspectItemInstance
+     + set(InspectItemInstance instance)
+     + flush()
+     - init()
+
+ }
+
+class InspectExecutorService {
+    String instanceId
+    InspectItemService
+    List<InspectItem> inspectItems
+    List<InspectItemInstance> inspectItemInstances
+    InspectItemInstanceCacheService
+
+
+    + execute()
+    - instanceInspectItem()
+}
+
+
+
+
+'abstract class AbstractList
+'abstract AbstractCollection
+'interface List
+'interface Collection
+'
+'List <|-- AbstractList
+'Collection <|-- AbstractCollection
+'
+'Collection <|- List
+'AbstractCollection <|- AbstractList
+'AbstractList <|-- ArrayList
+'
+'class ArrayList {
+'Object[] elementData
+'size()
+'}
+'
+'enum TimeUnit {
+'DAYS
+'HOURS
+'MINUTES
+'}
+
+@enduml
