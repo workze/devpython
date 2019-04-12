@@ -1,0 +1,32 @@
+
+
+手工启动巡检 POST
+{
+  "inspectItems": [
+    "health.terminal", "cpu.terminal"
+  ]
+}
+
+{
+    status: 200
+    inspectId : 1572343289
+}
+
+查询巡检结果 GET
+/url/inspectId/1572343289
+
+{
+    "inspectId" : 1572343289
+    "inspectItems" : [
+        "health.terminal" : {
+            "instances": [
+                {
+                    progress : running/finished
+                    status: green/yellow/red
+
+                }
+            ]
+        }
+
+    ]
+}

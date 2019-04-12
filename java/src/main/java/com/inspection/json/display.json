@@ -1,0 +1,25 @@
+{
+  "groups": [
+    {
+      "groupId": "group.group01",
+      "groupName": "",
+      "groupDesc": "",
+      "items":[
+        {
+          "itemId": "item.item01",
+          "itemName": "",
+          "itemDesc": "",
+          "multiInstance": false,
+          "fixInfo": ""
+
+        },
+        {
+          "itemId": "item.item02"
+        }
+      ]
+    },
+    {
+      "groupId": "group.group02"
+    }
+  ]
+}

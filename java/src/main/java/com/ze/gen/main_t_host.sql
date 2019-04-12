@@ -1,0 +1,1 @@
+INSERT INTO t_host (id, ip, port, user, password, alias, createtime, status, type) VALUES (1, '192.168.1.10', 22, 'root', 'root123', 'host', 1, 0, 0);

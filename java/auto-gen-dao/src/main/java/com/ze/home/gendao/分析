@@ -1,0 +1,30 @@
+
+{
+    name:name
+    size:20
+    className:java.lang.String
+    label:name
+}
+
+
+
+CREATE TABLE `customer` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(20) NOT NULL DEFAULT '' COMMENT 'name comment',
+  `age` int(5) NOT NULL DEFAULT '18',
+  `sex` tinyint(1) NOT NULL DEFAULT '1',
+  `productname` varchar(20) NOT NULL DEFAULT '',
+  `birthday` date DEFAULT NULL,
+  `content` blob,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+
+
+
+
+
+
+
+
+

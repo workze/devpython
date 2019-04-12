@@ -1,0 +1,18 @@
+{
+  "id": 1234232311,
+  "inspectItems": [
+    {
+      "itemId": "item.cpu.01",
+      "itemInstances":[
+        {
+          "instanceId": "",
+          "progress": "running/finished",
+          "status": "green/yellow/red/unknown"
+        }
+      ]
+    },
+    {
+      "itemId": "item.cpu.02"
+    }
+  ]
+}

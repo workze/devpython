@@ -1,0 +1,23 @@
+@startuml
+rectangle service
+'rectangle resource
+'database itemsDB
+'
+'frame f{
+'    rectangle inspectItemManger
+'    storage inspectItems
+'    storage inspectItemInstances
+'}
+'
+'req --> resource
+'
+'resource --> service : 1.start inspect
+'
+'service --> inspectItemManger
+'
+'service -up-> resource : 2.is running\nreturn inspectid
+'
+'
+'itemsDB - inspectItemManger : get/save
+
+@enduml
